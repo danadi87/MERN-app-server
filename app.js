@@ -4,14 +4,10 @@ const PORT = 5005;
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 require("dotenv").config();
-const { isAuthenticated } = require("./middleware/auth.middleware");
-
 const FRONTEND_URL = process.env.ORIGIN || `http://localhost:5173`;
-
 const app = express();
 
 const mongoose = require("mongoose");
-
 mongoose
   .connect("mongodb://127.0.0.1:27017/mern-app")
   .then((x) =>
@@ -32,11 +28,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //Routes
-
 //user routes
 const userRoutes = require("./routes/user.routes");
-app.use("/api", isAuthenticated, userRoutes);
-
+app.use("/api", userRoutes);
 // START SERVER
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
