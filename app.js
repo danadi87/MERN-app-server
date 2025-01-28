@@ -35,7 +35,11 @@ app.use(cookieParser());
 
 //user routes
 const userRoutes = require("./routes/user.routes");
-app.use("/api", isAuthenticated, userRoutes);
+app.use("/api", userRoutes);
+
+//product routes
+const productRoutes = require("./routes/product.routes");
+app.use("/api", productRoutes);
 
 // START SERVER
 app.listen(PORT, () => {
