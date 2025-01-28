@@ -5,11 +5,12 @@ const cookieParser = require("cookie-parser");
 const cors = require("cors");
 require("dotenv").config();
 const FRONTEND_URL = process.env.ORIGIN || `http://localhost:5173`;
+const dbUrl = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/mern-app";
 const app = express();
 
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb://127.0.0.1:27017/mern-app")
+  .connect(dbUrl)
   .then((x) =>
     console.log(`Connected to Mongo! Database name:"${x.connections[0].name}"`)
   )
