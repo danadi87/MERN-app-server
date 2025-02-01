@@ -4,6 +4,7 @@ const PORT = 5005;
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 require("dotenv").config();
+
 const FRONTEND_URL = process.env.ORIGIN || `http://localhost:5173`;
 const dbUrl = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/mern-app";
 const app = express();
@@ -32,6 +33,14 @@ app.use(cookieParser());
 //user routes
 const userRoutes = require("./routes/user.routes");
 app.use("/api", userRoutes);
+
+const authRoutes = require("./routes/auth.routes");
+app.use("/auth", authRoutes);
+
+//product routes
+const productRoutes = require("./routes/product.routes");
+app.use("/api", productRoutes);
+
 // START SERVER
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
