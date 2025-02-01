@@ -7,6 +7,8 @@ const userSchema = new Schema({
   },
   password: String,
   name: String,
+  admin: Boolean,
+  profileImage: [],
 });
 
 module.exports = model("User", userSchema);

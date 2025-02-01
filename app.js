@@ -4,7 +4,6 @@ const PORT = 5005;
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 require("dotenv").config();
-const { isAuthenticated } = require("./middleware/auth.middleware");
 
 const FRONTEND_URL = process.env.ORIGIN || `http://localhost:5173`;
 
@@ -36,6 +35,9 @@ app.use(cookieParser());
 //user routes
 const userRoutes = require("./routes/user.routes");
 app.use("/api", userRoutes);
+
+const authRoutes = require("./routes/auth.routes");
+app.use("/auth", authRoutes);
 
 //product routes
 const productRoutes = require("./routes/product.routes");
