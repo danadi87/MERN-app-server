@@ -20,7 +20,7 @@ mongoose
 //Middleware
 app.use(
   cors({
-    origin: [FRONTEND_URL],
+    origin: [FRONTEND_URL, "http://localhost:5173"],
   })
 );
 app.use(express.json());
@@ -30,16 +30,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 //Routes
-//user routes
 const userRoutes = require("./routes/user.routes");
 app.use("/api", userRoutes);
 
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
-//product routes
+// Product Routes
 const productRoutes = require("./routes/product.routes");
-app.use("/api", productRoutes);
+app.use("/api/products", productRoutes);
 
 // START SERVER
 app.listen(PORT, () => {

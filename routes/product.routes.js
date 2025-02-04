@@ -1,7 +1,8 @@
 const router = require("express").Router();
 const Product = require("../models/Product.model");
 
-router.post("/api/products", (req, res, next) => {
+router.post("/", (req, res, next) => {
+  console.log("POST request received to create a product");
   Product.create({
     category: req.body.category,
     image: req.body.image,
@@ -14,24 +15,28 @@ router.post("/api/products", (req, res, next) => {
       res.status(201).json(product);
     })
     .catch((err) => {
-      console.log(err);
+      console.error("Error creating product: ", err);
       res.status(500).json({ error: "Failed to create the product." });
     });
 });
 
-router.get("/api/products", (req, res, next) => {
+router.get("/", (req, res, next) => {
+  console.log("GET request received for products");
   Product.find({})
     .then((product) => {
       console.log("Found products: ", product);
       res.status(200).json(product);
     })
     .catch((err) => {
-      console.log(err);
+      console.error("Error fetching products: ", err);
       next(err);
     });
 });
 
-router.get("/api/products/:productId", (req, res, next) => {
+router.get("/:productId", (req, res, next) => {
+  console.log(
+    `GET request received for product with ID: ${req.params.productId}`
+  );
   const productId = req.params.productId;
   Product.findById(productId)
     .then((product) => {
@@ -39,36 +44,8 @@ router.get("/api/products/:productId", (req, res, next) => {
       res.status(200).json(product);
     })
     .catch((err) => {
-      console.log(err);
+      console.error("Error fetching product: ", err);
       res.status(500).json({ error: "Failed to load the product." });
-      next(err);
-    });
-});
-
-router.put("/api/products/:productId", (req, res, next) => {
-  const productId = req.params.productId;
-  Product.findByIdAndUpdate(productId, req.body, { new: true })
-    .then((product) => {
-      console.log("Updated product: ", product);
-      res.status(200).json(product);
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json({ error: "Failed to update the product." });
-      next(err);
-    });
-});
-
-router.delete("/api/products/:productId", (req, res, next) => {
-  const productId = req.params.productId;
-  Product.findByIdAndDelete(productId)
-    .then((product) => {
-      console.log("Product deleted");
-      res.status(200).send();
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json({ error: "Failed to delete the product" });
       next(err);
     });
 });
