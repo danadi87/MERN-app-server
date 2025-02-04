@@ -58,7 +58,7 @@ router.post("/login", async (req, res) => {
 
 router.get("/verify", isAuthenticated, (req, res) => {
   console.log("made it to the verify route", req.payload);
-  res.status(200).json({ currentUser: req.payload });
+  res.status(200).json(req.payload);
 });
 
 module.exports = router;

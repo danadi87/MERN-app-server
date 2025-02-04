@@ -32,7 +32,58 @@ router.post(
     }
   }
 );
-
+router.post("/signup", uploader.array("imageUrl"), async (req, res) => {
+  const images = req.files;
+  const imageUrls = [];
+  for (const image of images) {
+    const result = await cloudinary.uploader.upload(image.path, {
+      resource_type: "auto",
+    });
+    imageUrls.push(result.secure_url);
+  }
+  if (!imageUrls.length) {
+    console.log("there is no file");
+    try {
+      const salt = bcryptjs.genSaltSync(12);
+      const hashedPassword = bcryptjs.hashSync(req.body.password, salt);
+      const hashedUser = {
+        username: req.body.username,
+        email: req.body.email,
+        password: hashedPassword,
+      };
+      const createdUser = await UserModel.create(hashedUser);
+      console.log("user created", createdUser);
+      res.status(201).json({
+        message: "user created without an image, nice work",
+        createdUser,
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: "Error creating user" });
+    }
+  } else {
+    console.log("there is a file image array", imageUrls);
+    try {
+      const salt = bcryptjs.genSaltSync(12);
+      const hashedPassword = bcryptjs.hashSync(req.body.password, salt);
+      const hashedUser = {
+        username: req.body.username,
+        email: req.body.email,
+        password: hashedPassword,
+        profileImage: imageUrls[0],
+      };
+      const createdUser = await UserModel.create(hashedUser);
+      console.log("user created", createdUser);
+      res.status(201).json({
+        message: "user createdb with an image, nice work",
+        createdUser,
+      });
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: "Error creating user" });
+    }
+  }
+});
 router.post("/users", (req, res) => {
   console.log("Received request body:", req.body);
   User.create({
@@ -91,7 +142,7 @@ router.put("/users/:userId", (req, res, next) => {
 router.delete("/users/:userId", (req, res, next) => {
   const userId = req.params.userId;
   User.findByIdAndDelete(userId)
-    .then((student) => {
+    .then((user) => {
       console.log("User deleted");
       res.status(200).send();
     })
