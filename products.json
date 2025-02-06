@@ -1,7 +1,7 @@
 [
   {
     "id": "item_001",
-    "image": "https://example.com/images/ibuprofen.jpg",
+    "image": "https://www.pharma-gdd.com/cache/product_show/766961747275732d69627570726f66656e652d3430306d672d31322d636f6d7072696d65732d6661636568a21cc8.jpg.webp",
     "title": "Ibuprofen 400mg",
     "description": "Pain reliever and anti-inflammatory medication.",
     "category": "Pharmacy",
@@ -9,7 +9,7 @@
   },
   {
     "id": "item_002",
-    "image": "https://example.com/images/vitamin-c.jpg",
+    "image": "https://m.media-amazon.com/images/I/81gG6xbCv2L._AC_SL1500_.jpg",
     "title": "Vitamin C Tablets",
     "description": "Boost your immune system with high-quality Vitamin C.",
     "category": "Pharmacy",
@@ -17,7 +17,7 @@
   },
   {
     "id": "item_003",
-    "image": "https://example.com/images/pain-relief-cream.jpg",
+    "image": "https://www.aspercreme.com/dam/jcr:07cddefb-21aa-48a2-beb6-79d6eb1c86e7/05723_ASP_Original_Cream_3oz_Crtn_F_1188x890%20(1)%20(1).png",
     "title": "Pain Relief Cream",
     "description": "Effective topical cream for muscle and joint pain.",
     "category": "Pharmacy",
