@@ -38,9 +38,13 @@ router.post("/login", async (req, res) => {
 
       const tokenCheck = process.env.TOKEN_SECRET;
       console.log("Token Secret:", tokenCheck);
-
+      console.log(foundUser);
       const authToken = jwt.sign(
-        { _id: foundUser._id, name: foundUser.name },
+        {
+          _id: foundUser._id,
+          name: foundUser.name,
+          profileImage: foundUser.profileImage,
+        },
         process.env.TOKEN_SECRET,
         {
           algorithm: "HS256",
