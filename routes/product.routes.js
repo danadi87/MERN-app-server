@@ -1,53 +1,69 @@
-const router = require("express").Router();
+const express = require("express");
+const router = express.Router();
 const Product = require("../models/Product.model");
 
-router.post("/", (req, res, next) => {
-  console.log("POST request received to create a product");
-  Product.create({
-    category: req.body.category,
-    image: req.body.image,
-    title: req.body.title,
-    description: req.body.description,
-    amount: req.body.amount,
-  })
-    .then((product) => {
-      console.log("Product created: ", product);
-      res.status(201).json(product);
-    })
-    .catch((err) => {
-      console.error("Error creating product: ", err);
-      res.status(500).json({ error: "Failed to create the product." });
+// Create a product
+router.post("/", async (req, res) => {
+  try {
+    const { category, image, title, description, amount } = req.body;
+
+    if (!category || !title || !amount) {
+      return res
+        .status(400)
+        .json({ error: "Category, title, and amount are required." });
+    }
+
+    const product = await Product.create({
+      category,
+      image,
+      title,
+      description,
+      amount,
     });
+    console.log("Product created: ", product);
+    res.status(201).json(product);
+  } catch (err) {
+    console.error("Error creating product: ", err);
+    res.status(500).json({ error: "Failed to create the product." });
+  }
 });
 
-router.get("/", (req, res, next) => {
-  console.log("GET request received for products");
-  Product.find({})
-    .then((product) => {
-      console.log("Found products: ", product);
-      res.status(200).json(product);
-    })
-    .catch((err) => {
-      console.error("Error fetching products: ", err);
-      next(err);
-    });
+// Get all products or filter by category
+router.get("/", async (req, res) => {
+  try {
+    const { category } = req.query;
+
+    const query = category ? { category } : {}; // Filter by category if provided
+    const products = await Product.find(query);
+
+    console.log("Found products: ", products);
+    res.status(200).json(products);
+  } catch (err) {
+    console.error("Error fetching products: ", err);
+    res.status(500).json({ error: "Failed to fetch products." });
+  }
 });
 
-router.get("/:productId", (req, res, next) => {
-  console.log(
-    `GET request received for product with ID: ${req.params.productId}`
-  );
-  const productId = req.params.productId;
-  Product.findById(productId)
-    .then((product) => {
-      console.log("Found product: ", product);
-      res.status(200).json(product);
-    })
-    .catch((err) => {
-      console.error("Error fetching product: ", err);
-      res.status(500).json({ error: "Failed to load the product." });
-      next(err);
-    });
+// Get a product by ID
+router.get("/:productId", async (req, res) => {
+  try {
+    const { productId } = req.params;
+
+    if (!productId.match(/^[0-9a-fA-F]{24}$/)) {
+      return res.status(400).json({ error: "Invalid product ID format." });
+    }
+
+    const product = await Product.findById(productId);
+    if (!product) {
+      return res.status(404).json({ error: "Product not found." });
+    }
+
+    console.log("Found product: ", product);
+    res.status(200).json(product);
+  } catch (err) {
+    console.error("Error fetching product: ", err);
+    res.status(500).json({ error: "Failed to load the product." });
+  }
 });
 
 module.exports = router;
