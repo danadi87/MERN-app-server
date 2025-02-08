@@ -4,6 +4,9 @@ const jwt = require("jsonwebtoken");
 const { isAuthenticated } = require("../middleware/auth.middleware");
 const UserModel = require("../models/User.model");
 
+let cart = [];
+let favorites = [];
+
 router.post("/signup", async (req, res) => {
   const { email, password } = req.body;
 
@@ -65,4 +68,35 @@ router.get("/verify", isAuthenticated, (req, res) => {
   res.status(200).json(req.payload);
 });
 
+router.get("/cart", isAuthenticated, (req, res) => {
+  res.json(cart);
+});
+
+router.post("/cart", isAuthenticated, (req, res) => {
+  const product = req.body;
+  cart.push(product);
+  res.status(201).json(product);
+});
+
+router.delete("/cart/:productId", isAuthenticated, (req, res) => {
+  const productId = req.params.productId;
+  cart = cart.filter((product) => product.id !== productId);
+  res.status(200).json({ message: "Product removed" });
+});
+
+router.get("/favorites", isAuthenticated, (req, res) => {
+  res.json(favorites);
+});
+
+router.post("/favorites", isAuthenticated, (req, res) => {
+  const product = req.body;
+  cart.push(product);
+  res.status(201).json(product);
+});
+
+router.delete("/favorites/:productId", isAuthenticated, (req, res) => {
+  const productId = req.params.productId;
+  cart = favorites.filter((product) => product.id !== productId);
+  res.status(200).json({ message: "Product removed" });
+});
 module.exports = router;
