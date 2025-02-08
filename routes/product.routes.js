@@ -3,7 +3,7 @@ const router = express.Router();
 const Product = require("../models/Product.model");
 
 // Create a product
-router.post("/", async (req, res) => {
+router.post("/products", async (req, res) => {
   try {
     const { category, image, title, description, amount } = req.body;
 
@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
 });
 
 // Get all products or filter by category
-router.get("/", async (req, res) => {
+router.get("/products", async (req, res) => {
   try {
     const { category } = req.query;
 
@@ -45,7 +45,7 @@ router.get("/", async (req, res) => {
 });
 
 // Get a product by ID
-router.get("/:productId", async (req, res) => {
+router.get("/products/:productId", async (req, res) => {
   try {
     const { productId } = req.params;
 
