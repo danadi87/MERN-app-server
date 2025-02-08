@@ -11,35 +11,45 @@ router.post(
   "/multiple-uploads",
   uploader.array("imageUrl"),
   async (req, res) => {
-    //the images after the uploader will be in the request . files
     const images = req.files;
-    // create an array to push the urls into after we add them to the cloud
     const imageUrls = [];
-    //for in loop to loop over the object of images
+
     for (const image of images) {
-      // await the uploader.upload from cloudinary to get the  secure url
       const result = await cloudinary.uploader.upload(image.path, {
         resource_type: "auto",
       });
-      //push into the array the secure url on each iteration
+
       imageUrls.push(result.secure_url);
     }
+    console.log(req.files, imageUrls, req.body);
     if (!imageUrls.length) {
       console.log("there is no file");
       res.status(403).json({ message: "there is no file" });
-    } else {
-      res.status(200).json({ message: "success!", imageUrls });
+    }
+    try {
+      const updatedUser = await User.findByIdAndUpdate(
+        req.body.userId,
+        { profileImage: imageUrls[0] },
+        { new: true }
+      );
+      res.status(200).json({ message: "success!", user: updatedUser });
+    } catch (error) {
+      console.log(error);
+      res.status(500).json({ message: "Error updating profile image" });
     }
   }
 );
+
 router.post("/signup", uploader.array("imageUrl"), async (req, res) => {
   const images = req.files;
   const imageUrls = [];
-  for (const image of images) {
-    const result = await cloudinary.uploader.upload(image.path, {
-      resource_type: "auto",
-    });
-    imageUrls.push(result.secure_url);
+  if (images) {
+    for (const image of images) {
+      const result = await cloudinary.uploader.upload(image.path, {
+        resource_type: "auto",
+      });
+      imageUrls.push(result.secure_url);
+    }
   }
   if (!imageUrls.length) {
     console.log("there is no file");
@@ -47,11 +57,11 @@ router.post("/signup", uploader.array("imageUrl"), async (req, res) => {
       const salt = bcryptjs.genSaltSync(12);
       const hashedPassword = bcryptjs.hashSync(req.body.password, salt);
       const hashedUser = {
-        username: req.body.username,
+        name: req.body.name,
         email: req.body.email,
         password: hashedPassword,
       };
-      const createdUser = await UserModel.create(hashedUser);
+      const createdUser = await User.create(hashedUser);
       console.log("user created", createdUser);
       res.status(201).json({
         message: "user created without an image, nice work",
