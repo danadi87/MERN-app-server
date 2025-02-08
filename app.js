@@ -38,7 +38,7 @@ app.use("/auth", authRoutes);
 
 // Product Routes
 const productRoutes = require("./routes/product.routes");
-app.use("/api/products", productRoutes);
+app.use("/api", productRoutes);
 
 // START SERVER
 app.listen(PORT, () => {
