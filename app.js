@@ -4,6 +4,10 @@ const PORT = 5005;
 const cookieParser = require("cookie-parser");
 const cors = require("cors");
 require("dotenv").config();
+const {
+  errorHandler,
+  notFoundHandler,
+} = require("./middleware/error-handling");
 
 const FRONTEND_URL = process.env.ORIGIN || `http://localhost:5173`;
 const dbUrl = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/mern-app";
@@ -39,6 +43,10 @@ app.use("/auth", authRoutes);
 // Product Routes
 const productRoutes = require("./routes/product.routes");
 app.use("/api", productRoutes);
+
+//Custom error handler
+app.use(notFoundHandler);
+app.use(errorHandler);
 
 // START SERVER
 app.listen(PORT, () => {
