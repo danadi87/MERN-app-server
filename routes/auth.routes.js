@@ -47,6 +47,7 @@ router.post("/login", async (req, res) => {
           _id: foundUser._id,
           name: foundUser.name,
           profileImage: foundUser.profileImage,
+          admin: foundUser.admin,
         },
         process.env.TOKEN_SECRET,
         {

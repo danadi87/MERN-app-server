@@ -60,6 +60,7 @@ router.post("/signup", uploader.array("imageUrl"), async (req, res) => {
         name: req.body.name,
         email: req.body.email,
         password: hashedPassword,
+        admin: req.body.admin,
       };
       const createdUser = await User.create(hashedUser);
       console.log("user created", createdUser);
