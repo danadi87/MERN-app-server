@@ -25,7 +25,7 @@
   },
   {
     "id": "item_004",
-    "image": "https://example.com/images/cough-syrup.jpg",
+    "image": "https://images.apollo247.in/pub/media/catalog/product/b/e/ben0006_2.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%201200w",
     "title": "Cough Syrup",
     "description": "Soothing cough syrup for fast relief from coughing.",
     "category": "Pharmacy",
@@ -33,7 +33,7 @@
   },
   {
     "id": "item_005",
-    "image": "https://example.com/images/antacid-tablets.jpg",
+    "image": "https://www.babelleinternational.com/wp-content/uploads/2024/06/bc9aa24a-f905-4efd-bae3-afdf3f1706ab_1.f601212a8cafee6a078ea794e7f7a186.webp",
     "title": "Antacid Tablets",
     "description": "Fast relief from heartburn and acid indigestion.",
     "category": "Pharmacy",
@@ -41,7 +41,7 @@
   },
   {
     "id": "item_006",
-    "image": "https://example.com/images/hand-sanitizer.jpg",
+    "image": "https://m.media-amazon.com/images/I/71pIZxvGipL._AC_UF894,1000_QL80_.jpg",
     "title": "Hand Sanitizer Gel",
     "description": "Effective hand sanitizer gel for quick hygiene.",
     "category": "Pharmacy",
@@ -49,7 +49,7 @@
   },
   {
     "id": "item_007",
-    "image": "https://example.com/images/first-aid-kit.jpg",
+    "image": "https://m.media-amazon.com/images/I/81a8W+LrAwL.jpg",
     "title": "First Aid Kit",
     "description": "Comprehensive first aid kit for emergencies.",
     "category": "Pharmacy",
@@ -57,7 +57,7 @@
   },
   {
     "id": "item_008",
-    "image": "https://example.com/images/thermometer.jpg",
+    "image": "https://m.media-amazon.com/images/I/61dtpnsDXcL.jpg",
     "title": "Digital Thermometer",
     "description": "Accurate and easy-to-use digital thermometer.",
     "category": "Pharmacy",
@@ -161,7 +161,7 @@
   },
   {
     "id": "item_021",
-    "image": "https://example.com/images/pizza.jpg",
+    "image": "https://img.cuisineaz.com/660x495/2013/12/20/i18445-margherite.jpeg",
     "title": "Margherita Pizza",
     "description": "Classic Italian pizza with tomato sauce, basil, and mozzarella.",
     "category": "Restaurant",
@@ -169,7 +169,7 @@
   },
   {
     "id": "item_022",
-    "image": "https://example.com/images/burger.jpg",
+    "image": "https://www.oliveandmango.com/images/uploads/2021_06_21_classic_grilled_cheeseburger_1.jpg",
     "title": "Beef Cheeseburger",
     "description": "Juicy beef burger with melted cheese and fresh vegetables.",
     "category": "Restaurant",
