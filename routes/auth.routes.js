@@ -56,7 +56,9 @@ router.post("/login", async (req, res) => {
         }
       );
       console.log("here is the authToken", authToken);
-      res.status(200).json({ message: "login successful", authToken });
+      res
+        .status(200)
+        .json({ message: "login successful", authToken, user: foundUser });
     }
   } catch (error) {
     console.log(error);

@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const Product = require("../models/Product.model");
 
-// Create a product
 router.post("/products", async (req, res) => {
   try {
     const { category, image, title, description, amount } = req.body;
@@ -28,12 +27,11 @@ router.post("/products", async (req, res) => {
   }
 });
 
-// Get all products or filter by category
 router.get("/products", async (req, res) => {
   try {
     const { category } = req.query;
 
-    const query = category ? { category } : {}; // Filter by category if provided
+    const query = category ? { category } : {};
     const products = await Product.find(query);
 
     console.log("Found products: ", products);
@@ -44,7 +42,6 @@ router.get("/products", async (req, res) => {
   }
 });
 
-// Get a product by ID
 router.get("/products/:productId", async (req, res) => {
   try {
     const { productId } = req.params;
