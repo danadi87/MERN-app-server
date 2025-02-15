@@ -1,0 +1,451 @@
+[{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f775a"
+  },
+  "id": "item_001",
+  "image": "https://www.pharma-gdd.com/cache/product_show/766961747275732d69627570726f66656e652d3430306d672d31322d636f6d7072696d65732d6661636568a21cc8.jpg.webp",
+  "title": "Ibuprofen 400mg",
+  "description": "Pain reliever and anti-inflammatory medication.",
+  "category": "Pharmacy",
+  "amount": 4.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f775b"
+  },
+  "id": "item_002",
+  "image": "https://m.media-amazon.com/images/I/81gG6xbCv2L._AC_SL1500_.jpg",
+  "title": "Vitamin C Tablets",
+  "description": "Boost your immune system with high-quality Vitamin C.",
+  "category": "Pharmacy",
+  "amount": 6.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f775c"
+  },
+  "id": "item_003",
+  "image": "https://www.aspercreme.com/dam/jcr:07cddefb-21aa-48a2-beb6-79d6eb1c86e7/05723_ASP_Original_Cream_3oz_Crtn_F_1188x890%20(1)%20(1).png",
+  "title": "Pain Relief Cream",
+  "description": "Effective topical cream for muscle and joint pain.",
+  "category": "Pharmacy",
+  "amount": 9.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f775d"
+  },
+  "id": "item_004",
+  "image": "https://images.apollo247.in/pub/media/catalog/product/b/e/ben0006_2.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%201200w",
+  "title": "Cough Syrup",
+  "description": "Soothing cough syrup for fast relief from coughing.",
+  "category": "Pharmacy",
+  "amount": 7.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f775e"
+  },
+  "id": "item_005",
+  "image": "https://www.babelleinternational.com/wp-content/uploads/2024/06/bc9aa24a-f905-4efd-bae3-afdf3f1706ab_1.f601212a8cafee6a078ea794e7f7a186.webp",
+  "title": "Antacid Tablets",
+  "description": "Fast relief from heartburn and acid indigestion.",
+  "category": "Pharmacy",
+  "amount": 4.79
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f775f"
+  },
+  "id": "item_006",
+  "image": "https://m.media-amazon.com/images/I/71pIZxvGipL._AC_UF894,1000_QL80_.jpg",
+  "title": "Hand Sanitizer Gel",
+  "description": "Effective hand sanitizer gel for quick hygiene.",
+  "category": "Pharmacy",
+  "amount": 5.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7760"
+  },
+  "id": "item_007",
+  "image": "https://m.media-amazon.com/images/I/81a8W+LrAwL.jpg",
+  "title": "First Aid Kit",
+  "description": "Comprehensive first aid kit for emergencies.",
+  "category": "Pharmacy",
+  "amount": 19.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7761"
+  },
+  "id": "item_008",
+  "image": "https://m.media-amazon.com/images/I/61dtpnsDXcL.jpg",
+  "title": "Digital Thermometer",
+  "description": "Accurate and easy-to-use digital thermometer.",
+  "category": "Pharmacy",
+  "amount": 14.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7762"
+  },
+  "id": "item_009",
+  "image": "https://example.com/images/band-aids.jpg",
+  "title": "Band-Aids Pack",
+  "description": "Assorted size band-aids for wound protection.",
+  "category": "Pharmacy",
+  "amount": 3.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7763"
+  },
+  "id": "item_010",
+  "image": "https://example.com/images/pain-relief-tablets.jpg",
+  "title": "Pain Relief Tablets",
+  "description": "Fast and effective pain relief tablets.",
+  "category": "Pharmacy",
+  "amount": 7.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7764"
+  },
+  "id": "item_011",
+  "image": "https://example.com/images/sunscreen.jpg",
+  "title": "Sunscreen SPF 50",
+  "description": "High-protection sunscreen for all-day skin safety.",
+  "category": "Pharmacy",
+  "amount": 12.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7765"
+  },
+  "id": "item_012",
+  "image": "https://example.com/images/antiseptic-cream.jpg",
+  "title": "Antiseptic Cream",
+  "description": "Effective cream for cuts and wounds.",
+  "category": "Pharmacy",
+  "amount": 5.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7766"
+  },
+  "id": "item_013",
+  "image": "https://example.com/images/eye-drops.jpg",
+  "title": "Moisturizing Eye Drops",
+  "description": "Relieves dry and irritated eyes.",
+  "category": "Pharmacy",
+  "amount": 9.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7767"
+  },
+  "id": "item_014",
+  "image": "https://example.com/images/cold-relief.jpg",
+  "title": "Cold Relief Capsules",
+  "description": "Effective capsules for cold and flu symptoms.",
+  "category": "Pharmacy",
+  "amount": 8.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7768"
+  },
+  "id": "item_015",
+  "image": "https://example.com/images/hand-cream.jpg",
+  "title": "Moisturizing Hand Cream",
+  "description": "Soothes and hydrates dry hands.",
+  "category": "Pharmacy",
+  "amount": 6.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7769"
+  },
+  "id": "item_016",
+  "image": "https://example.com/images/antibacterial-wipes.jpg",
+  "title": "Antibacterial Wipes",
+  "description": "Kills 99.9% of germs and bacteria.",
+  "category": "Pharmacy",
+  "amount": 4.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f776a"
+  },
+  "id": "item_017",
+  "image": "https://example.com/images/nasal-spray.jpg",
+  "title": "Nasal Spray",
+  "description": "Clears nasal congestion fast.",
+  "category": "Pharmacy",
+  "amount": 6.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f776b"
+  },
+  "id": "item_018",
+  "image": "https://example.com/images/cough-lozenges.jpg",
+  "title": "Cough Lozenges",
+  "description": "Soothes throat and relieves cough.",
+  "category": "Pharmacy",
+  "amount": 3.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f776c"
+  },
+  "id": "item_019",
+  "image": "https://example.com/images/energy-vitamins.jpg",
+  "title": "Energy Boost Vitamins",
+  "description": "Supports energy levels and overall wellness.",
+  "category": "Pharmacy",
+  "amount": 11.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f776d"
+  },
+  "id": "item_020",
+  "image": "https://example.com/images/protein-bars.jpg",
+  "title": "Protein Bars",
+  "description": "Delicious protein-packed bars for energy.",
+  "category": "Pharmacy",
+  "amount": 2.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f776e"
+  },
+  "id": "item_021",
+  "image": "https://img.cuisineaz.com/660x495/2013/12/20/i18445-margherite.jpeg",
+  "title": "Margherita Pizza",
+  "description": "Classic Italian pizza with tomato sauce, basil, and mozzarella.",
+  "category": "Restaurant",
+  "amount": 9.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f776f"
+  },
+  "id": "item_022",
+  "image": "https://www.oliveandmango.com/images/uploads/2021_06_21_classic_grilled_cheeseburger_1.jpg",
+  "title": "Beef Cheeseburger",
+  "description": "Juicy beef burger with melted cheese and fresh vegetables.",
+  "category": "Restaurant",
+  "amount": 12.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7770"
+  },
+  "id": "item_023",
+  "image": "https://example.com/images/sushi.jpg",
+  "title": "Assorted Sushi Platter",
+  "description": "Fresh and delicious sushi platter with assorted rolls.",
+  "category": "Restaurant",
+  "amount": 24.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7771"
+  },
+  "id": "item_024",
+  "image": "https://example.com/images/grilled-chicken.jpg",
+  "title": "Grilled Chicken Plate",
+  "description": "Tender grilled chicken with seasonal vegetables.",
+  "category": "Restaurant",
+  "amount": 17.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7772"
+  },
+  "id": "item_025",
+  "image": "https://example.com/images/chocolate-mousse.jpg",
+  "title": "Chocolate Mousse",
+  "description": "Rich and creamy chocolate mousse dessert.",
+  "category": "Restaurant",
+  "amount": 6.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7773"
+  },
+  "id": "item_026",
+  "image": "https://example.com/images/pasta.jpg",
+  "title": "Spaghetti Bolognese",
+  "description": "Traditional Italian spaghetti with rich meat sauce.",
+  "category": "Restaurant",
+  "amount": 14.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7774"
+  },
+  "id": "item_027",
+  "image": "https://example.com/images/ceviche.jpg",
+  "title": "Seafood Ceviche",
+  "description": "Fresh seafood marinated in citrus juices.",
+  "category": "Restaurant",
+  "amount": 19.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7775"
+  },
+  "id": "item_028",
+  "image": "https://example.com/images/tacos.jpg",
+  "title": "Beef Tacos",
+  "description": "Authentic beef tacos with fresh toppings.",
+  "category": "Restaurant",
+  "amount": 13.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7776"
+  },
+  "id": "item_029",
+  "image": "https://example.com/images/steak.jpg",
+  "title": "Grilled Steak Plate",
+  "description": "Juicy grilled steak with seasoned sides.",
+  "category": "Restaurant",
+  "amount": 29.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7777"
+  },
+  "id": "item_030",
+  "image": "https://example.com/images/veggie-wrap.jpg",
+  "title": "Veggie Wrap",
+  "description": "Healthy wrap with fresh vegetables and hummus.",
+  "category": "Restaurant",
+  "amount": 10.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7778"
+  },
+  "id": "item_031",
+  "image": "https://example.com/images/fish-fillet.jpg",
+  "title": "Pan-Seared Fish Fillet",
+  "description": "Fresh fish fillet served with seasonal veggies.",
+  "category": "Restaurant",
+  "amount": 22.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7779"
+  },
+  "id": "item_032",
+  "image": "https://example.com/images/ramen.jpg",
+  "title": "Spicy Ramen Bowl",
+  "description": "Rich and flavorful ramen with a spicy twist.",
+  "category": "Restaurant",
+  "amount": 15.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f777a"
+  },
+  "id": "item_033",
+  "image": "https://example.com/images/salad.jpg",
+  "title": "Garden Salad",
+  "description": "Fresh garden salad with house dressing.",
+  "category": "Restaurant",
+  "amount": 9.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f777b"
+  },
+  "id": "item_034",
+  "image": "https://example.com/images/dessert-crepes.jpg",
+  "title": "Dessert Crepes",
+  "description": "Thin crepes filled with chocolate and fresh fruit.",
+  "category": "Restaurant",
+  "amount": 8.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f777c"
+  },
+  "id": "item_035",
+  "image": "https://example.com/images/orange-juice.jpg",
+  "title": "Fresh Orange Juice",
+  "description": "Natural orange juice made with freshly squeezed oranges.",
+  "category": "Supermarket",
+  "amount": 3.99
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f777d"
+  },
+  "id": "item_036",
+  "image": "https://example.com/images/whole-wheat-bread.jpg",
+  "title": "Whole Wheat Bread",
+  "description": "Soft and delicious whole wheat bread for a healthy diet.",
+  "category": "Supermarket",
+  "amount": 2.5
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f777e"
+  },
+  "id": "item_037",
+  "image": "https://example.com/images/milk.jpg",
+  "title": "Organic Whole Milk",
+  "description": "Fresh organic whole milk sourced from grass-fed cows.",
+  "category": "Supermarket",
+  "amount": 1.89
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f777f"
+  },
+  "id": "item_038",
+  "image": "https://example.com/images/rice.jpg",
+  "title": "Basmati Rice",
+  "description": "Fragrant and long-grain Basmati rice for delicious meals.",
+  "category": "Supermarket",
+  "amount": 8.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7780"
+  },
+  "id": "item_039",
+  "image": "https://example.com/images/yogurt.jpg",
+  "title": "Greek Yogurt",
+  "description": "Thick and creamy Greek yogurt with live cultures.",
+  "category": "Supermarket",
+  "amount": 3.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7781"
+  },
+  "id": "item_040",
+  "image": "https://example.com/images/granola.jpg",
+  "title": "Granola Cereal",
+  "description": "Crunchy granola cereal packed with nutrients and flavor.",
+  "category": "Supermarket",
+  "amount": 5.49
+},
+{
+  "_id": {
+    "$oid": "67b05daa9fc4968a555f7782"
+  },
+  "id": "item_041",
+  "image": "https://example.com/images/olive-oil.jpg",
+  "title": "Extra Virgin Olive Oil",
+  "description": "Premium quality extra virgin olive oil for cooking.",
+  "category": "Supermarket",
+  "amount": 9.99
+}]

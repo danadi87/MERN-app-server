@@ -8,13 +8,10 @@ const {
   errorHandler,
   notFoundHandler,
 } = require("./middleware/error-handling");
-const stripe = require("stripe")(
-  "sk_test_51Qs8GxCB5CgnDcFy0t0OrPVPkAMoeFva9yav2Vx34t5rcAAaTOUIvjBAi0OxvRjz6NS4jpBasc7ujBRf9BOuR85b00zFzCdS2t"
-);
-const paymentRoutes = require("./routes/payment.routes");
+const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 const FRONTEND_URL = process.env.ORIGIN || `http://localhost:5173`;
-const dbUrl = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/mern-app";
+const dbUrl = process.env.MONGO_URL;
 const app = express();
 
 const mongoose = require("mongoose");
@@ -49,6 +46,7 @@ const productRoutes = require("./routes/product.routes");
 app.use("/api", productRoutes);
 
 //Payment route
+const paymentRoutes = require("./routes/payment.routes");
 app.use("/payment", paymentRoutes);
 
 //Custom error handler

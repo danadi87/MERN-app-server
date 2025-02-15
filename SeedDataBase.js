@@ -1,7 +1,7 @@
 const ProductModel = require("./models/Product.model");
 const products = require("./products.json");
 
-const dbUrl = "mongodb://127.0.0.1:27017/mern-app";
+const dbUrl = "mongodb+srv://Joshua:pizza1234@fourthtime.4gdi2.mongodb.net/";
 const mongoose = require("mongoose");
 mongoose
   .connect(dbUrl)

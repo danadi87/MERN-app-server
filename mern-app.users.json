@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "67a5168ba251fe79d8eb9f63"
+  },
+  "email": "joshua@joshua.com",
+  "password": "$2a$12$mXrhw4sAu3yK2c/Y/bYE3OYI5xrAM2LsnT2kA0t33IjF5Xwu71mNu",
+  "profileImage": "https://res.cloudinary.com/dp63r9768/image/upload/v1738873530/qaynwxq0scgge6paxfsz.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67a5182bf829a9f453839513"
+  },
+  "email": "mirela@mirela.com",
+  "password": "$2a$12$o18.fq1wFRKh402TlnHsh.iIVW7F.2ZtFYQr2ceb57P0/4Rdd50ZO",
+  "name": "Mirela",
+  "profileImage": "https://res.cloudinary.com/dp63r9768/image/upload/v1738873438/kqabkxcehripxz810vwi.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ae3ec6ba50440bb9fc637b"
+  },
+  "email": "anna@anna.com",
+  "password": "$2a$12$a9zxE3VrwDal8M8m4OYGVOunwHDMjPEdmy4CyIcetrCwvuoywAkaK",
+  "name": "Anna",
+  "profileImage": "https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ae3f47ac467b490ac7da5d"
+  },
+  "email": "hernani@hernani.com",
+  "password": "$2a$12$gnWSG8EC6BDJ6zjo7HunZO9Auk7YZWQJYdyIzjnUGE0KVmKUryXLa",
+  "name": "Hernani",
+  "admin": true,
+  "profileImage": "https://res.cloudinary.com/dp63r9768/image/upload/v1739613498/xkrp8ryg7dqaxkvy1cnj.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ae3f88ac467b490ac7da5f"
+  },
+  "email": "luke@luke.com",
+  "password": "$2a$12$YPkUw/cSXrVyo4zMONIyGeazbIyRGzF0mhLvJiFJ64ZcJ07uWTT4e",
+  "name": "Luke",
+  "admin": false,
+  "profileImage": "https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D",
+  "__v": 0
+}]
