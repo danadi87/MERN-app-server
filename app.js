@@ -45,10 +45,6 @@ app.use("/auth", authRoutes);
 const productRoutes = require("./routes/product.routes");
 app.use("/api", productRoutes);
 
-//Payment route
-const paymentRoutes = require("./routes/payment.routes");
-app.use("/payment", paymentRoutes);
-
 //Custom error handler
 app.use(notFoundHandler);
 app.use(errorHandler);
