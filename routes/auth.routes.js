@@ -13,20 +13,21 @@ router.post("/signup", async (req, res) => {
   try {
     const foundUser = await UserModel.findOne({ email });
     if (foundUser) {
-      res.status(403).json({ message: "email already taken" });
-    } else {
-      const theSalt = bcryptjs.genSaltSync(12);
-      const hashedPassword = bcryptjs.hashSync(password, theSalt);
-
-      const createdUser = await UserModel.create({
-        ...req.body,
-        password: hashedPassword,
-      });
-      res.status(200).json({ message: "signup successful", user: createdUser });
+      return res.status(409).json({ message: "Email already in use." });
     }
+
+    const theSalt = bcryptjs.genSaltSync(12);
+    const hashedPassword = bcryptjs.hashSync(password, theSalt);
+
+    const createdUser = await UserModel.create({
+      ...req.body,
+      password: hashedPassword,
+    });
+
+    res.status(201).json({ message: "Signup successful", user: createdUser });
   } catch (error) {
-    console.log(error);
-    res.status(500).json(error);
+    console.error("Signup error:", error);
+    res.status(500).json({ message: "Internal Server Error" });
   }
 });
 
@@ -35,39 +36,35 @@ router.post("/login", async (req, res) => {
   try {
     const foundUser = await UserModel.findOne({ email });
     if (!foundUser) {
-      res.status(403).json({ message: "Invalid credentials" });
-    } else {
-      foundUser.password = "****";
-
-      const tokenCheck = process.env.TOKEN_SECRET;
-      console.log("Token Secret:", tokenCheck);
-      console.log(foundUser);
-      const authToken = jwt.sign(
-        {
-          _id: foundUser._id,
-          name: foundUser.name,
-          profileImage: foundUser.profileImage,
-          admin: foundUser.admin,
-        },
-        process.env.TOKEN_SECRET,
-        {
-          algorithm: "HS256",
-          expiresIn: "480h",
-        }
-      );
-      console.log("here is the authToken", authToken);
-      res
-        .status(200)
-        .json({ message: "login successful", authToken, user: foundUser });
+      return res.status(403).json({ message: "Invalid credentials" });
     }
+
+    foundUser.password = "****";
+
+    const authToken = jwt.sign(
+      {
+        _id: foundUser._id,
+        name: foundUser.name,
+        profileImage: foundUser.profileImage,
+        admin: foundUser.admin,
+      },
+      process.env.TOKEN_SECRET,
+      {
+        algorithm: "HS256",
+        expiresIn: "480h",
+      }
+    );
+
+    res
+      .status(200)
+      .json({ message: "Login successful", authToken, user: foundUser });
   } catch (error) {
-    console.log(error);
-    res.status(500).json(error);
+    console.error("Login error:", error);
+    res.status(500).json({ message: "Internal Server Error" });
   }
 });
 
 router.get("/verify", isAuthenticated, (req, res) => {
-  console.log("made it to the verify route", req.payload);
   res.status(200).json(req.payload);
 });
 
@@ -93,13 +90,13 @@ router.get("/favorites", isAuthenticated, (req, res) => {
 
 router.post("/favorites", isAuthenticated, (req, res) => {
   const product = req.body;
-  cart.push(product);
+  favorites.push(product);
   res.status(201).json(product);
 });
 
 router.delete("/favorites/:productId", isAuthenticated, (req, res) => {
   const productId = req.params.productId;
-  cart = favorites.filter((product) => product.id !== productId);
+  favorites = favorites.filter((product) => product.id !== productId);
   res.status(200).json({ message: "Product removed" });
 });
 
