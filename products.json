@@ -160,7 +160,7 @@
     "category": "Pharmacy",
     "amount": 3.99,
     "brand": "sanitas"
-  }
+  },
   {
     "id": "item_021",
     "image": "https://img.cuisineaz.com/660x495/2013/12/20/i18445-margherite.jpeg",
@@ -295,7 +295,7 @@
     "category": "Restaurant",
     "amount": 2.49,
     "brand": "mcdonalds"
-  }
+  },
   {
     "id": "item_001",
     "image": "https://www.pharma-gdd.com/cache/product_show/766961747275732d69627570726f66656e652d3430306d672d31322d636f6d7072696d65732d6661636568a21cc8.jpg.webp",
