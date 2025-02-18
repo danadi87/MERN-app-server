@@ -150,18 +150,6 @@ router.put("/users/:userId", (req, res, next) => {
     });
 });
 
-router.delete("/users/:userId", (req, res, next) => {
-  const userId = req.params.userId;
-  User.findByIdAndDelete(userId)
-    .then((user) => {
-      console.log("User deleted");
-      res.status(200).send();
-    })
-    .catch((err) => {
-      console.log(err);
-      res.status(500).json({ error: "Failed to delete the user" });
-      next(err);
-    });
-});
+
 
 module.exports = router;

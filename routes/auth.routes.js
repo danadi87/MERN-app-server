@@ -100,4 +100,23 @@ router.delete("/favorites/:productId", isAuthenticated, (req, res) => {
   res.status(200).json({ message: "Product removed" });
 });
 
+router.delete("/users/:userId", isAuthenticated, async (req, res, next) => {
+  try {
+    const userId = req.params.userId;
+
+    if (req.payload._id !== userId) {
+      return res.status(404).json({ error: "Cannot find user" });
+    }
+    const user = await UserModel.findByIdAndDelete(userId);
+    if (!user) {
+      return res.status(404).json({ error: "Cannot find user" });
+    }
+    console.log("User deleted");
+    res.status(200).json({ message: "User deleted successfully" });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ error: "Failed to delete the user" });
+    next(err);
+  }
+});
 module.exports = router;
