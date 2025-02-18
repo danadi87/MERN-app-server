@@ -4,7 +4,7 @@ const Product = require("../models/Product.model");
 
 router.post("/products", async (req, res) => {
   try {
-    const { category, image, title, description, amount } = req.body;
+    const { category, image, title, description, amount, brand } = req.body;
 
     if (!category || !title || !amount) {
       return res
@@ -18,6 +18,7 @@ router.post("/products", async (req, res) => {
       title,
       description,
       amount,
+      brand,
     });
     console.log("Product created: ", product);
     res.status(201).json(product);
