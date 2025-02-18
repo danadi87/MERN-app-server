@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose");
 
 const paymentSchema = new Schema({
   name: String,
-  cardNumber: Number,
+  cardNumber: String,
   expirationDate: Date,
   cvc: String,
   country: String,
