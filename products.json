@@ -5,7 +5,8 @@
     "title": "Ibuprofen 400mg",
     "description": "Pain reliever and anti-inflammatory medication.",
     "category": "Pharmacy",
-    "amount": 4.99
+    "amount": 4.99,
+    "brand": "cruzVerde"
   },
   {
     "id": "item_002",
@@ -13,7 +14,8 @@
     "title": "Vitamin C Tablets",
     "description": "Boost your immune system with high-quality Vitamin C.",
     "category": "Pharmacy",
-    "amount": 6.49
+    "amount": 6.49,
+    "brand": "farmaciaAlfa"
   },
   {
     "id": "item_003",
@@ -21,7 +23,8 @@
     "title": "Pain Relief Cream",
     "description": "Effective topical cream for muscle and joint pain.",
     "category": "Pharmacy",
-    "amount": 9.99
+    "amount": 9.99,
+    "brand": "sanitas"
   },
   {
     "id": "item_004",
@@ -29,7 +32,8 @@
     "title": "Cough Syrup",
     "description": "Soothing cough syrup for fast relief from coughing.",
     "category": "Pharmacy",
-    "amount": 7.99
+    "amount": 7.99,
+    "brand": "cruzVerde"
   },
   {
     "id": "item_005",
@@ -37,7 +41,8 @@
     "title": "Antacid Tablets",
     "description": "Fast relief from heartburn and acid indigestion.",
     "category": "Pharmacy",
-    "amount": 4.79
+    "amount": 4.79,
+    "brand": "farmaciaAlfa"
   },
   {
     "id": "item_006",
@@ -45,7 +50,8 @@
     "title": "Hand Sanitizer Gel",
     "description": "Effective hand sanitizer gel for quick hygiene.",
     "category": "Pharmacy",
-    "amount": 5.49
+    "amount": 5.49,
+    "brand": "sanitas"
   },
   {
     "id": "item_007",
@@ -53,7 +59,8 @@
     "title": "First Aid Kit",
     "description": "Comprehensive first aid kit for emergencies.",
     "category": "Pharmacy",
-    "amount": 19.99
+    "amount": 19.99,
+    "brand": "cruzVerde"
   },
   {
     "id": "item_008",
@@ -61,7 +68,8 @@
     "title": "Digital Thermometer",
     "description": "Accurate and easy-to-use digital thermometer.",
     "category": "Pharmacy",
-    "amount": 14.99
+    "amount": 14.99,
+    "brand": "farmaciaAlfa"
   },
   {
     "id": "item_009",
@@ -69,103 +77,98 @@
     "title": "Band-Aids Pack",
     "description": "Assorted size band-aids for wound protection.",
     "category": "Pharmacy",
-    "amount": 3.99
+    "amount": 3.99,
+    "brand": "sanitas"
   },
   {
     "id": "item_010",
-    "image": "https://example.com/images/pain-relief-tablets.jpg",
+    "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/panadol-reborn/en_IN/product-detail/380x463/Crocin-Pain-Relief-15-Tablets-3D_New.png?auto=format",
     "title": "Pain Relief Tablets",
     "description": "Fast and effective pain relief tablets.",
     "category": "Pharmacy",
-    "amount": 7.99
+    "amount": 7.99,
+    "brand": "cruzVerde"
   },
   {
     "id": "item_011",
-    "image": "https://example.com/images/sunscreen.jpg",
+    "image": "https://exclusivebeautyclub.com/cdn/shop/products/la-roche-posay-anthelios-mineral-light-fluid-sunscreen-spf-50-la-roche-posay-17-fl-oz-shop-at-exclusive-beauty-club-482635.jpg?v=1692432093",
     "title": "Sunscreen SPF 50",
     "description": "High-protection sunscreen for all-day skin safety.",
     "category": "Pharmacy",
-    "amount": 12.99
+    "amount": 12.99,
+    "brand": "farmaciaAlfa"
   },
   {
     "id": "item_012",
-    "image": "https://example.com/images/antiseptic-cream.jpg",
+    "image": "https://mcgrocer.com/cdn/shop/files/40871011_0_640x640_5ed90119-da6d-40a2-bbb8-5f633fe053bf_grande.jpg?v=1723850856",
     "title": "Antiseptic Cream",
     "description": "Effective cream for cuts and wounds.",
     "category": "Pharmacy",
-    "amount": 5.99
+    "amount": 5.99,
+    "brand": "sanitas"
   },
   {
     "id": "item_013",
-    "image": "https://example.com/images/eye-drops.jpg",
+    "image": "https://horizane.com/1060-large_default/eye-moisturizing-eye-drops-15ml.jpg",
     "title": "Moisturizing Eye Drops",
     "description": "Relieves dry and irritated eyes.",
     "category": "Pharmacy",
-    "amount": 9.49
+    "amount": 9.49,
+    "brand": "cruzVerde"
   },
   {
     "id": "item_014",
-    "image": "https://example.com/images/cold-relief.jpg",
+    "image": "https://britishchemist.co.uk/wp-content/uploads/2021/07/galpharm-cold-relief-16-capsules-c24754161825b75380e3d306d1e3d6f2-1.jpg",
     "title": "Cold Relief Capsules",
     "description": "Effective capsules for cold and flu symptoms.",
     "category": "Pharmacy",
-    "amount": 8.99
+    "amount": 8.99,
+    "brand": "farmaciaAlfa"
   },
   {
     "id": "item_015",
-    "image": "https://example.com/images/hand-cream.jpg",
+    "image": "https://m.media-amazon.com/images/I/51oltb1mx5L.jpg",
     "title": "Moisturizing Hand Cream",
     "description": "Soothes and hydrates dry hands.",
     "category": "Pharmacy",
-    "amount": 6.49
+    "amount": 6.49,
+    "brand": "sanitas"
   },
   {
     "id": "item_016",
-    "image": "https://example.com/images/antibacterial-wipes.jpg",
+    "image": "https://lemon.sa/image/catalog/pharmacy/products/update-2024/03108633%20Dettol%20Wipes%20Antiseptic%20Original%20-%2040%20Pcs%20-.jpg",
     "title": "Antibacterial Wipes",
     "description": "Kills 99.9% of germs and bacteria.",
     "category": "Pharmacy",
-    "amount": 4.99
+    "amount": 4.99,
+    "brand": "cruzVerde"
   },
   {
     "id": "item_017",
-    "image": "https://example.com/images/nasal-spray.jpg",
+    "image": "https://www.parapharmacie-et-medicament.com/client/840002/media/files/GeloSitin-Soin-nasal-spray-15ml-32388_1_1487089686.jpg",
     "title": "Nasal Spray",
     "description": "Clears nasal congestion fast.",
     "category": "Pharmacy",
-    "amount": 6.99
+    "amount": 6.99,
+    "brand": "farmaciaAlfa"
   },
   {
     "id": "item_018",
-    "image": "https://example.com/images/cough-lozenges.jpg",
+    "image": "https://www.prospan.com.au/sites/PROAU/cache/file/6591C7DA-B8C2-4C4D-B9E4948107643D2C_packshot.png",
     "title": "Cough Lozenges",
     "description": "Soothes throat and relieves cough.",
     "category": "Pharmacy",
-    "amount": 3.99
-  },
-  {
-    "id": "item_019",
-    "image": "https://example.com/images/energy-vitamins.jpg",
-    "title": "Energy Boost Vitamins",
-    "description": "Supports energy levels and overall wellness.",
-    "category": "Pharmacy",
-    "amount": 11.99
-  },
-  {
-    "id": "item_020",
-    "image": "https://example.com/images/protein-bars.jpg",
-    "title": "Protein Bars",
-    "description": "Delicious protein-packed bars for energy.",
-    "category": "Pharmacy",
-    "amount": 2.99
-  },
+    "amount": 3.99,
+    "brand": "sanitas"
+  }
   {
     "id": "item_021",
     "image": "https://img.cuisineaz.com/660x495/2013/12/20/i18445-margherite.jpeg",
     "title": "Margherita Pizza",
     "description": "Classic Italian pizza with tomato sauce, basil, and mozzarella.",
     "category": "Restaurant",
-    "amount": 9.99
+    "amount": 9.99,
+    "brand": "telepizza"
   },
   {
     "id": "item_022",
@@ -173,158 +176,232 @@
     "title": "Beef Cheeseburger",
     "description": "Juicy beef burger with melted cheese and fresh vegetables.",
     "category": "Restaurant",
-    "amount": 12.49
+    "amount": 12.49,
+    "brand": "burgerKing"
   },
   {
     "id": "item_023",
-    "image": "https://example.com/images/sushi.jpg",
-    "title": "Assorted Sushi Platter",
-    "description": "Fresh and delicious sushi platter with assorted rolls.",
+    "image": "https://media.telepizza.com/intl/website_telepizza_com/web/images/products/detail/takenori/001_Telepizza-Margarita.png",
+    "title": "BBQ Chicken Pizza",
+    "description": "Delicious BBQ chicken pizza with mozzarella and onions.",
     "category": "Restaurant",
-    "amount": 24.99
+    "amount": 11.99,
+    "brand": "telepizza"
   },
   {
     "id": "item_024",
-    "image": "https://example.com/images/grilled-chicken.jpg",
-    "title": "Grilled Chicken Plate",
-    "description": "Tender grilled chicken with seasonal vegetables.",
+    "image": "https://www.mcdonalds.com/content/dam/usa/nutrition/items/Regular/desktop/t-mcdonalds-chicken-nuggets-6pc.jpg",
+    "title": "Chicken Nuggets",
+    "description": "Crispy and tender chicken nuggets, perfect for dipping.",
     "category": "Restaurant",
-    "amount": 17.99
+    "amount": 5.99,
+    "brand": "mcdonalds"
   },
   {
     "id": "item_025",
-    "image": "https://example.com/images/chocolate-mousse.jpg",
-    "title": "Chocolate Mousse",
-    "description": "Rich and creamy chocolate mousse dessert.",
+    "image": "https://www.burgerking.it/sites/default/files/2021-07/Double%20Whopper%20Bacon%20menu.png",
+    "title": "Double Whopper Bacon",
+    "description": "A double beef patty burger with bacon, cheese, and fresh toppings.",
     "category": "Restaurant",
-    "amount": 6.99
+    "amount": 8.99,
+    "brand": "burgerKing"
   },
   {
     "id": "item_026",
-    "image": "https://example.com/images/pasta.jpg",
-    "title": "Spaghetti Bolognese",
-    "description": "Traditional Italian spaghetti with rich meat sauce.",
+    "image": "https://media.telepizza.com/intl/website_telepizza_com/web/images/products/detail/789Telepizza.png",
+    "title": "Pepperoni Pizza",
+    "description": "Classic pepperoni pizza with a crispy crust.",
     "category": "Restaurant",
-    "amount": 14.99
+    "amount": 10.99,
+    "brand": "telepizza"
   },
   {
     "id": "item_027",
-    "image": "https://example.com/images/ceviche.jpg",
-    "title": "Seafood Ceviche",
-    "description": "Fresh seafood marinated in citrus juices.",
+    "image": "https://www.mcdonalds.com/is/image/content/dam/usa/nutrition/items/Regular/desktop/t-mcdonalds-fries-small.jpg",
+    "title": "McDonald's Fries",
+    "description": "Golden crispy fries with the perfect amount of salt.",
     "category": "Restaurant",
-    "amount": 19.49
+    "amount": 3.49,
+    "brand": "mcdonalds"
   },
   {
     "id": "item_028",
-    "image": "https://example.com/images/tacos.jpg",
-    "title": "Beef Tacos",
-    "description": "Authentic beef tacos with fresh toppings.",
+    "image": "https://www.mcdonalds.com/content/dam/usa/nutrition/items/Regular/desktop/t-mcdonalds-mcchicken.jpg",
+    "title": "McChicken",
+    "description": "Crispy chicken sandwich with lettuce and mayo.",
     "category": "Restaurant",
-    "amount": 13.49
+    "amount": 4.99,
+    "brand": "mcdonalds"
   },
   {
     "id": "item_029",
-    "image": "https://example.com/images/steak.jpg",
-    "title": "Grilled Steak Plate",
-    "description": "Juicy grilled steak with seasoned sides.",
+    "image": "https://www.seriouseats.com/thmb/SElKztAfJf4RT9pN_Majh1ftI9U=/1500x1125/filters:fill(auto,1)/20201120-sausage-mcmuffin-vicky-wasik-5-151019f79ab342ba8e0743cd5c9a299f.jpg",
+    "title": "Sausage McMuffin",
+    "description": "Classic McDonald's breakfast sandwich with sausage and egg.",
     "category": "Restaurant",
-    "amount": 29.99
+    "amount": 4.99,
+    "brand": "mcdonalds"
   },
   {
     "id": "item_030",
-    "image": "https://example.com/images/veggie-wrap.jpg",
-    "title": "Veggie Wrap",
-    "description": "Healthy wrap with fresh vegetables and hummus.",
+    "image": "https://static.wikia.nocookie.net/burgerking/images/e/e0/Burger-King-Onion-Rings.jpg",
+    "title": "Onion Rings",
+    "description": "Crispy, golden onion rings with dipping sauce.",
     "category": "Restaurant",
-    "amount": 10.49
+    "amount": 4.49,
+    "brand": "burgerKing"
   },
   {
     "id": "item_031",
-    "image": "https://example.com/images/fish-fillet.jpg",
-    "title": "Pan-Seared Fish Fillet",
-    "description": "Fresh fish fillet served with seasonal veggies.",
+    "image": "https://www.mcdonalds.com/content/dam/sites/mcdonalds.com/hero-gdm/en-US/mccafe-frappe-menu-hero-desktop.jpg",
+    "title": "McCafe Caramel Frappe",
+    "description": "Blended ice coffee with caramel flavor and whipped cream.",
     "category": "Restaurant",
-    "amount": 22.99
+    "amount": 3.99,
+    "brand": "mcdonalds"
   },
   {
     "id": "item_032",
-    "image": "https://example.com/images/ramen.jpg",
-    "title": "Spicy Ramen Bowl",
-    "description": "Rich and flavorful ramen with a spicy twist.",
+    "image": "https://bk-emea-prd.s3.amazonaws.com/sites/burgerking.it/files/2022-06/Satisfries_1.png",
+    "title": "Burger King Fries",
+    "description": "Thicker, crispier fries with a golden crunch.",
     "category": "Restaurant",
-    "amount": 15.99
+    "amount": 3.99,
+    "brand": "burgerKing"
   },
   {
     "id": "item_033",
-    "image": "https://example.com/images/salad.jpg",
-    "title": "Garden Salad",
-    "description": "Fresh garden salad with house dressing.",
+    "image": "https://bk-emea-prd.s3.amazonaws.com/sites/burgerking.it/files/2023-04/Chicken%20Nuggets.png",
+    "title": "BK Chicken Nuggets",
+    "description": "Crispy chicken nuggets served with dipping sauces.",
     "category": "Restaurant",
-    "amount": 9.49
+    "amount": 5.49,
+    "brand": "burgerKing"
   },
   {
     "id": "item_034",
-    "image": "https://example.com/images/dessert-crepes.jpg",
-    "title": "Dessert Crepes",
-    "description": "Thin crepes filled with chocolate and fresh fruit.",
+    "image": "https://bk-emea-prd.s3.amazonaws.com/sites/burgerking.it/files/2022-06/Double%20Cheeseburger.png",
+    "title": "BK Double Cheeseburger",
+    "description": "Two flame-grilled beef patties with cheese, pickles, and ketchup.",
     "category": "Restaurant",
-    "amount": 8.99
+    "amount": 6.99,
+    "brand": "burgerKing"
   },
   {
     "id": "item_035",
-    "image": "https://example.com/images/orange-juice.jpg",
+    "image": "https://www.mcdonalds.com/content/dam/usa/nutrition/items/Regular/desktop/t-mcdonalds-apple-pie.jpg",
+    "title": "Apple Pie",
+    "description": "Warm, crispy apple pie with a sweet filling.",
+    "category": "Restaurant",
+    "amount": 2.49,
+    "brand": "mcdonalds"
+  }
+  {
+    "id": "item_001",
+    "image": "https://www.pharma-gdd.com/cache/product_show/766961747275732d69627570726f66656e652d3430306d672d31322d636f6d7072696d65732d6661636568a21cc8.jpg.webp",
+    "title": "Ibuprofen 400mg",
+    "description": "Pain reliever and anti-inflammatory medication.",
+    "category": "Pharmacy",
+    "amount": 4.99,
+    "brand": "Mercadona"
+  },
+  {
+    "id": "item_002",
+    "image": "https://m.media-amazon.com/images/I/81gG6xbCv2L._AC_SL1500_.jpg",
+    "title": "Vitamin C Tablets",
+    "description": "Boost your immune system with high-quality Vitamin C.",
+    "category": "Pharmacy",
+    "amount": 6.49,
+    "brand": "Mercadona"
+  },
+  {
+    "id": "item_003",
+    "image": "https://www.aspercreme.com/dam/jcr:07cddefb-21aa-48a2-beb6-79d6eb1c86e7/05723_ASP_Original_Cream_3oz_Crtn_F_1188x890%20(1)%20(1).png",
+    "title": "Pain Relief Cream",
+    "description": "Effective topical cream for muscle and joint pain.",
+    "category": "Pharmacy",
+    "amount": 9.99,
+    "brand": "Mercadona"
+  },
+  {
+    "id": "item_004",
+    "image": "https://images.apollo247.in/pub/media/catalog/product/b/e/ben0006_2.jpg?tr=q-80,f-webp,w-400,dpr-3,c-at_max%201200w",
+    "title": "Cough Syrup",
+    "description": "Soothing cough syrup for fast relief from coughing.",
+    "category": "Pharmacy",
+    "amount": 7.99,
+    "brand": "Mercadona"
+  },
+  {
+    "id": "item_005",
+    "image": "https://www.babelleinternational.com/wp-content/uploads/2024/06/bc9aa24a-f905-4efd-bae3-afdf3f1706ab_1.f601212a8cafee6a078ea794e7f7a186.webp",
+    "title": "Antacid Tablets",
+    "description": "Fast relief from heartburn and acid indigestion.",
+    "category": "Pharmacy",
+    "amount": 4.79,
+    "brand": "Lidl"
+  },
+  {
+    "id": "item_006",
+    "image": "https://m.media-amazon.com/images/I/71pIZxvGipL._AC_UF894,1000_QL80_.jpg",
+    "title": "Hand Sanitizer Gel",
+    "description": "Effective hand sanitizer gel for quick hygiene.",
+    "category": "Pharmacy",
+    "amount": 5.49,
+    "brand": "Lidl"
+  },
+  {
+    "id": "item_007",
+    "image": "https://m.media-amazon.com/images/I/81a8W+LrAwL.jpg",
+    "title": "First Aid Kit",
+    "description": "Comprehensive first aid kit for emergencies.",
+    "category": "Pharmacy",
+    "amount": 19.99,
+    "brand": "Lidl"
+  },
+  {
+    "id": "item_008",
+    "image": "https://m.media-amazon.com/images/I/61dtpnsDXcL.jpg",
+    "title": "Digital Thermometer",
+    "description": "Accurate and easy-to-use digital thermometer.",
+    "category": "Pharmacy",
+    "amount": 14.99,
+    "brand": "Lidl"
+  },
+  {
+    "id": "item_035",
+    "image": "https://images-prod.healthline.com/hlcmsresource/images/AN_images/orange-juice-1296x728-feature.jpg",
     "title": "Fresh Orange Juice",
     "description": "Natural orange juice made with freshly squeezed oranges.",
     "category": "Supermarket",
-    "amount": 3.99
+    "amount": 3.99,
+    "brand": "Carrefour"
   },
   {
     "id": "item_036",
-    "image": "https://example.com/images/whole-wheat-bread.jpg",
+    "image": "https://images.freshop.ncrcloud.com/00073410956083/47839e993271da9db70fb7eb68d57786_large.png",
     "title": "Whole Wheat Bread",
     "description": "Soft and delicious whole wheat bread for a healthy diet.",
     "category": "Supermarket",
-    "amount": 2.5
+    "amount": 2.5,
+    "brand": "Carrefour"
   },
   {
     "id": "item_037",
-    "image": "https://example.com/images/milk.jpg",
+    "image": "https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/64b18f43ba6e3052a60c21ff_2023-cen-ecommerce-eb-organicwholemilk128fz._FMwebp__SR600,600_.jpg",
     "title": "Organic Whole Milk",
     "description": "Fresh organic whole milk sourced from grass-fed cows.",
     "category": "Supermarket",
-    "amount": 1.89
+    "amount": 1.89,
+    "brand": "Carrefour"
   },
   {
     "id": "item_038",
-    "image": "https://example.com/images/rice.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGWHgGlO2cEmYgL1vGM_McJ7DEwTJVQCJGog&s",
     "title": "Basmati Rice",
     "description": "Fragrant and long-grain Basmati rice for delicious meals.",
     "category": "Supermarket",
-    "amount": 8.49
-  },
-  {
-    "id": "item_039",
-    "image": "https://example.com/images/yogurt.jpg",
-    "title": "Greek Yogurt",
-    "description": "Thick and creamy Greek yogurt with live cultures.",
-    "category": "Supermarket",
-    "amount": 3.49
-  },
-  {
-    "id": "item_040",
-    "image": "https://example.com/images/granola.jpg",
-    "title": "Granola Cereal",
-    "description": "Crunchy granola cereal packed with nutrients and flavor.",
-    "category": "Supermarket",
-    "amount": 5.49
-  },
-  {
-    "id": "item_041",
-    "image": "https://example.com/images/olive-oil.jpg",
-    "title": "Extra Virgin Olive Oil",
-    "description": "Premium quality extra virgin olive oil for cooking.",
-    "category": "Supermarket",
-    "amount": 9.99
+    "amount": 8.49,
+    "brand": "Carrefour"
   }
 ]
