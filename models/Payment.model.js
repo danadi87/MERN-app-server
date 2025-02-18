@@ -4,7 +4,7 @@ const paymentSchema = new Schema({
   name: String,
   cardNumber: Number,
   expirationDate: Date,
-  cvc: Number,
+  cvc: String,
   country: String,
   postalCode: String,
 });

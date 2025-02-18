@@ -8,7 +8,6 @@ const {
   errorHandler,
   notFoundHandler,
 } = require("./middleware/error-handling");
-const stripe = require("stripe")(process.env.STRIPE_PRIVATE_KEY);
 
 const FRONTEND_URL = process.env.ORIGIN || `http://localhost:5173`;
 const dbUrl = process.env.MONGO_URL;
@@ -44,6 +43,10 @@ app.use("/auth", authRoutes);
 // Product Routes
 const productRoutes = require("./routes/product.routes");
 app.use("/api", productRoutes);
+
+//Payment routes
+const paymentRoutes = require("./routes/payment.routes");
+app.use("/payment", paymentRoutes);
 
 //Custom error handler
 app.use(notFoundHandler);
