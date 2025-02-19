@@ -150,6 +150,4 @@ router.put("/users/:userId", (req, res, next) => {
     });
 });
 
-
-
 module.exports = router;
