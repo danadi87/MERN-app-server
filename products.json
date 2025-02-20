@@ -303,7 +303,7 @@
     "description": "Pain reliever and anti-inflammatory medication.",
     "category": "Pharmacy",
     "amount": 4.99,
-    "brand": "Mercadona"
+    "brand": "farmaciaAlfa"
   },
   {
     "id": "item_002",
@@ -312,7 +312,7 @@
     "description": "Boost your immune system with high-quality Vitamin C.",
     "category": "Pharmacy",
     "amount": 6.49,
-    "brand": "Mercadona"
+    "brand": "farmaciaAlfa"
   },
   {
     "id": "item_003",
@@ -321,7 +321,7 @@
     "description": "Effective topical cream for muscle and joint pain.",
     "category": "Pharmacy",
     "amount": 9.99,
-    "brand": "Mercadona"
+    "brand": "farmaciaAlfa"
   },
   {
     "id": "item_004",
@@ -330,7 +330,7 @@
     "description": "Soothing cough syrup for fast relief from coughing.",
     "category": "Pharmacy",
     "amount": 7.99,
-    "brand": "Mercadona"
+    "brand": "cruzVerde"
   },
   {
     "id": "item_005",
@@ -339,7 +339,7 @@
     "description": "Fast relief from heartburn and acid indigestion.",
     "category": "Pharmacy",
     "amount": 4.79,
-    "brand": "Lidl"
+    "brand": "cruzVerde"
   },
   {
     "id": "item_006",
@@ -348,7 +348,7 @@
     "description": "Effective hand sanitizer gel for quick hygiene.",
     "category": "Pharmacy",
     "amount": 5.49,
-    "brand": "Lidl"
+    "brand": "cruzVerde"
   },
   {
     "id": "item_007",
@@ -357,7 +357,7 @@
     "description": "Comprehensive first aid kit for emergencies.",
     "category": "Pharmacy",
     "amount": 19.99,
-    "brand": "Lidl"
+    "brand": "sanitas"
   },
   {
     "id": "item_008",
@@ -366,7 +366,7 @@
     "description": "Accurate and easy-to-use digital thermometer.",
     "category": "Pharmacy",
     "amount": 14.99,
-    "brand": "Lidl"
+    "brand": "sanitas"
   },
   {
     "id": "item_035",
@@ -375,7 +375,7 @@
     "description": "Natural orange juice made with freshly squeezed oranges.",
     "category": "Supermarket",
     "amount": 3.99,
-    "brand": "Carrefour"
+    "brand": "Lidl"
   },
   {
     "id": "item_036",
@@ -393,7 +393,7 @@
     "description": "Fresh organic whole milk sourced from grass-fed cows.",
     "category": "Supermarket",
     "amount": 1.89,
-    "brand": "Carrefour"
+    "brand": "Mercadona"
   },
   {
     "id": "item_038",
