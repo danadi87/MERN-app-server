@@ -403,5 +403,86 @@
     "category": "Supermarket",
     "amount": 8.49,
     "brand": "Carrefour"
+  },
+  {
+    "id": "item_039",
+    "image": "https://www.lidl.ie/media/8266/226636_1.jpg",
+    "title": "Pineapple",
+    "description": "Fresh and juicy pineapple, rich in vitamins and nutrients.",
+    "category": "Supermarket",
+    "amount": 1.99,
+    "brand": "Lidl"
+  },
+  {
+    "id": "item_040",
+    "image": "https://www.lidl.ie/media/2204/218737.jpg",
+    "title": "Chicken Breasts",
+    "description": "Lean and tender chicken breasts for healthy meals.",
+    "category": "Supermarket",
+    "amount": 5.49,
+    "brand": "Lidl"
+  },
+  {
+    "id": "item_041",
+    "image": "https://www.lidl.fr/media/2701/267742.jpg",
+    "title": "Tomato Sauce",
+    "description": "Rich and flavorful tomato sauce for pasta and pizzas.",
+    "category": "Supermarket",
+    "amount": 2.49,
+    "brand": "Lidl"
+  },
+  {
+    "id": "item_042",
+    "image": "https://www.carrefour.es/medias/1002020214-1024-1024.jpg",
+    "title": "Frozen Pizza",
+    "description": "Delicious frozen pizza with a crispy crust and savory toppings.",
+    "category": "Supermarket",
+    "amount": 3.99,
+    "brand": "Carrefour"
+  },
+  {
+    "id": "item_043",
+    "image": "https://m.media-amazon.com/images/I/51JllPB2ZaL._AC_.jpg",
+    "title": "Organic Eggs",
+    "description": "Organic eggs sourced from free-range hens.",
+    "category": "Supermarket",
+    "amount": 2.79,
+    "brand": "Carrefour"
+  },
+  {
+    "id": "item_044",
+    "image": "https://www.mercadona.es/documents/20126/40591/0025279001098_001.jpg",
+    "title": "Cereal",
+    "description": "Healthy breakfast cereal with vitamins and fiber.",
+    "category": "Supermarket",
+    "amount": 2.99,
+    "brand": "Mercadona"
+  },
+  {
+    "id": "item_045",
+    "image": "https://www.mercadona.es/documents/20126/40591/0015000001083_001.jpg",
+    "title": "Mozzarella Cheese",
+    "description": "Fresh mozzarella cheese perfect for pizza and salads.",
+    "category": "Supermarket",
+    "amount": 1.99,
+    "brand": "Mercadona"
+  },
+  {
+    "id": "item_046",
+    "image": "https://www.mercadona.es/documents/20126/40591/0012345678000_001.jpg",
+    "title": "Frozen Vegetables",
+    "description": "A mix of frozen vegetables perfect for soups and stir-fries.",
+    "category": "Supermarket",
+    "amount": 1.79,
+    "brand": "Mercadona"
+  },
+  {
+    "id": "item_047",
+    "image": "https://www.mercadona.es/documents/20126/40591/0011223344556_001.jpg",
+    "title": "Frozen Fish Fillets",
+    "description": "High-quality frozen fish fillets, rich in protein.",
+    "category": "Supermarket",
+    "amount": 4.99,
+    "brand": "Mercadona"
   }
 ]
