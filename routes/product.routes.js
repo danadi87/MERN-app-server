@@ -64,6 +64,30 @@ router.get("/products/:productId", async (req, res) => {
   }
 });
 
+router.put("/products/:productId", async (req, res) => {
+  try {
+    const { productId } = req.params;
+    const { category, image, title, description, amount, brand } = req.body;
+
+    if (!productId.match(/^[0-9a-fA-F]{24}$/)) {
+      return res.status(400).json({ error: "Invalid product ID format" });
+    }
+    const updatedProduct = await Product.findByIdAndUpdate(
+      productId,
+      { category, image, title, description, amount, brand },
+      { new: true }
+    );
+    if (!updatedProduct) {
+      return res.status(404).json({ error: "Product not found" });
+    }
+    console.log("Updated product: ", updatedProduct);
+    res.status(200).json(updatedProduct);
+  } catch (err) {
+    console.error("Error updating product: ", err);
+    res.status(500).json({ error: "Failed to update the product" });
+  }
+});
+
 router.delete("/products/:productId", async (req, res) => {
   try {
     const { productId } = req.params;
