@@ -34,4 +34,13 @@ router.post("/add", async (req, res) => {
   }
 });
 
+router.get("/list", async (req, res) => {
+  try {
+    const payments = await Payment.find();
+    res.status(200).json(payments);
+  } catch (error) {
+    res.status(500).json({ message: "Error fetching payment methods" });
+  }
+});
+
 module.exports = router;
