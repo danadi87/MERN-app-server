@@ -7,11 +7,16 @@ function isAuthenticated(req, res, next) {
     req.headers.authorization.split(" ")[0] === "Bearer"
   ) {
     const theToken = req.headers.authorization.split(" ")[1];
-    const payload = jwt.verify(theToken, process.env.TOKEN_SECRET);
-    req.payload = payload;
-    next();
+    try {
+      const payload = jwt.verify(theToken, process.env.TOKEN_SECRET);
+      req.payload = payload;
+      next();
+    } catch (error) {
+      console.error("JWT Verification Error:", error);
+      return res.status(401).json({ message: "Invalid or expired token" });
+    }
   } else {
-    res.status(403).json({ message: "no token present" });
+    return res.status(403).json({ message: "no token present" });
   }
 }
 module.exports = { isAuthenticated };
